@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Audio Visualiser</title>
+	<style>
+		* { margin:0; padding:0; }
+		html, body { width:100%; height:100%; }
+		canvas { display:block;}
+		#fileInput {
+			opacity:0;
+			position:absolute;
+			left: 0px;
+    	top: 0px;
+			width:100%;
+			height:100%;
+		}
+		#sliders {
+			position:absolute;
+			left: 50px;
+    	top: 0px;
+			transform: rotate(90deg);
+		}
+	</style>
+</head>
+<body>
+	<canvas id="visCanvas"></canvas>
+	<input id="fileInput" type="file">
+	<div id="sliders"></div>
+	<audio controls autoplay id="controls" style="width:100%;position:absolute;bottom:0px;"></audio>
+	<script type="text/javascript" src="vis.js"></script>
+</body>
